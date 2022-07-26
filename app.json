@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "dnd-helper-native",
+    "slug": "dnd-helper-native",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
