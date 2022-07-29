@@ -1,8 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
-const Spell = (props) => {
-  const [spell, setSpell] = useState({})
+interface Props {
+    spell_name: string
+}
+
+interface Spell {
+    name: any
+}
+
+const Spell = (props: Props) => {
+  const [spell, setSpell] = useState<Spell>()
 
     //get request to dnd api
     const getSpellByName = (spell_name) => {
@@ -27,6 +35,7 @@ export default Spell
 
 const styles = StyleSheet.create({
     spell: {
+        textAlign: 'center',
         height: '100%',
         justifyContent: "flex-start",
         paddingTop: "50px"
