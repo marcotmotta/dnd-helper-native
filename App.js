@@ -2,18 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import Spell from './components/Spell';
 
 export default function App() {
-  const [num, setNum] = useState(0)
-
-  const handleSum = () => {
-    setNum(num + 1)
-  }
 
   return (
     <View style={styles.container}>
-      <Text>{num}</Text>
-      <Button title="Sum" onPress={handleSum}/>
+      <Spell spell_name='fireball'/>
       <StatusBar style="auto" />
     </View>
   );
